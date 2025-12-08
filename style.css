@@ -1,0 +1,25 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  color: navy;
+}
+
+img {
+  border: 3px solid black;
+}
+
+.header, .content, .footer {
+  margin: 20px;
+  padding: 15px;
+  background-color: white;
+}
+
+.box {
+  position: relative;
+  border: 2px dashed gray;
+  padding: 10px;
+}
