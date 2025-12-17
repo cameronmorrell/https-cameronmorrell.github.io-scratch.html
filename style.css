@@ -1,10 +1,17 @@
+/* GLOBAL STYLES */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
   color: #222;
-  margin: 0;
 }
 
+/* HEADINGS */
+h1, h2, h3 {
+  color: #0b3d91;
+}
+
+/* HEADER / NAV AREA */
 .header {
   background-color: #0b3d91;
   color: white;
@@ -16,24 +23,43 @@ nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENT SECTIONS */
 .section {
-  background: white;
+  background-color: white;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
 }
 
+/* IMAGES */
 img {
   width: 100%;
   max-width: 500px;
+  border: 3px solid black;
+  margin-top: 10px;
 }
 
+/* IFRAME (YouTube / Tableau) */
 iframe {
   width: 100%;
   max-width: 560px;
   height: 315px;
   display: block;
   margin-top: 10px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
