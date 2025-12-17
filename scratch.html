@@ -1,41 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My Scratch Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Scratch Page | Cameron Morrell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="header">
-  <h1>My Hobby: Fitness</h1>
-  <a href="#section2">Jump to Video Section</a>
-</div>
+<a id="top"></a>
 
-<div class="content">
+<header class="header">
+  <h1>Scratch Page</h1>
+  <p>Demonstrating HTML & CSS from scratch</p>
+
+  <nav>
+    <a href="../index.html">Professional Home</a>
+    <a href="../resume.html">Résumé</a>
+    <a href="app.html">AI Web App</a>
+  </nav>
+</header>
+
+<div class="section">
+  <h2>Interests</h2>
+
   <ol>
-    <li>Strength Training
+    <li>Personal Interests
       <ul>
-        <li>Bench Press</li>
-        <li>Squats</li>
+        <li>Soccer</li>
+        <li>Fitness</li>
+      </ul>
+    </li>
+    <li>Professional Interests
+      <ul>
+        <li>Finance</li>
+        <li>Law</li>
       </ul>
     </li>
   </ol>
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Fitness.jpg" width="300">
-  
-  <h2 id="section2">YouTube Video</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dJlFmxiL11s" allowfullscreen></iframe>
-
-  <h2>Tableau Graph</h2>
-  <div class="box">
-    <iframe src="https://public.tableau.com/views/RegionalSampleWorkbook/Storms" width="800" height="600"></iframe>
-  </div>
+  <a href="#media">Jump to Media</a>
 </div>
 
-<div class="footer">
-  <a href="index.html">Back to Professional Site</a> |
-  <a href="app.html">Go to Web App</a>
+<div class="section" id="media">
+  <h2>Media</h2>
+
+  <img src="img/hobby.jpg" alt="Soccer or fitness related image">
+
+  <iframe
+    src="https://www.youtube.com/embed/dQw4w9WgXc"
+    allowfullscreen></iframe>
 </div>
+
+<div class="section">
+  <h2>Tableau Visualization</h2>
+
+  <iframe
+    src="https://public.tableau.com/views/RegionalSampleWorkbook/Stocks?:showVizHome=no"
+    width="100%" height="600"></iframe>
+
+  <a href="#top">Back to top</a>
+</div>
+
+<footer>
+  <p>IS 201 Scratch Page</p>
+</footer>
 
 </body>
 </html>
