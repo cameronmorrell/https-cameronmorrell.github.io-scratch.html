@@ -1,41 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My Web App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #eef;
-    }
-  </style>
+<meta charset="utf-8">
+<title>Logic Riddle App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body { font-family: Arial; background:#111; color:white; text-align:center; }
+button { padding:10px; margin:10px; font-weight:bold; }
+</style>
 </head>
 <body>
 
-<h1>Number Guessing Game</h1>
-<p>Guess a number between 1–10</p>
+<h1>Logic & Riddle Generator</h1>
+<p>Practice analytical thinking — useful for finance and law.</p>
 
-<input type="number" id="guess">
-<button onclick="check()">Check</button>
+<button onclick="newRiddle()">New Riddle</button>
+<button onclick="showAnswer()">Reveal Answer</button>
 
-<p id="result"></p>
+<p id="riddle"></p>
+<p id="answer" style="display:none;"></p>
 
 <script>
-let number = Math.floor(Math.random() * 10) + 1;
+const riddles = [
+  ["What has keys but no locks?", "A piano"],
+  ["What gets wetter the more it dries?", "A towel"],
+  ["What has a head and tail but no body?", "A coin"]
+];
 
-function check() {
-  let user = document.getElementById("guess").value;
-  let result = document.getElementById("result");
+let current;
 
-  if (user == number) {
-    result.textContent = "Correct!";
-  } else {
-    result.textContent = "Try again!";
-  }
+function newRiddle() {
+  current = riddles[Math.floor(Math.random()*riddles.length)];
+  document.getElementById("riddle").innerText = current[0];
+  document.getElementById("answer").style.display = "none";
+}
+
+function showAnswer() {
+  document.getElementById("answer").innerText = current[1];
+  document.getElementById("answer").style.display = "block";
 }
 </script>
 
-<a href="scratch.html">Back to Scratch Page</a>
+<p><a href="index.html" style="color:lightblue;">Back to Scratch Page</a></p>
 
 </body>
 </html>
